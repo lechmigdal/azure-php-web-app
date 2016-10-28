@@ -11,3 +11,5 @@ if (!$link) {
 echo 'Connected successfully';
 mysql_close($link);
 ?>
+
+<a href="http://www.beyondsecurity.com/vulnerability-scanner-verification/security-test.azurewebsites.net"><img src="https://seal.beyondsecurity.com/verification-images/security-test.azurewebsites.net/vulnerability-scanner-2.gif" alt="Website Security Test" border="0" /></a>
