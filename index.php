@@ -2,7 +2,7 @@
 
 $username = getenv('MYSQLCONNSTR_username');
 $password = getenv('MYSQLCONNSTR_password');
-$connectionString = getenv('MYSQLCONNSTR_string');
+$connectionString = getenv('MYSQLCONNSTR_server');
 
 $link = mysql_connect($connectionString, $username, $password);
 if (!$link) {
