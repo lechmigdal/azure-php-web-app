@@ -7,5 +7,5 @@ echo 'Connected successfully';
 mysql_close($link);
 
 $connstr = getenv('MYSQLCONNSTR_username');
-echo 'Username: $connstr';
+echo "Username: $connstr";
 ?>
