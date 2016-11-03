@@ -11,6 +11,7 @@ if (!$link) {
 echo 'Connected successfully';
 error_log('Connected successfully to DB');
 mysql_close($link);
+echo 'Update works';
 ?>
 
 <a href="http://www.beyondsecurity.com/vulnerability-scanner-verification/security-test.azurewebsites.net"><img src="https://seal.beyondsecurity.com/verification-images/security-test.azurewebsites.net/vulnerability-scanner-2.gif" alt="Website Security Test" border="0" /></a>
