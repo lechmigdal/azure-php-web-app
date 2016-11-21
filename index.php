@@ -1,14 +1,14 @@
 <?php
 
-echo "This works";
+echo "This works - does it?";
+try {
 require "predis/autoload.php";
 
 echo "13";
-
 PredisAutoloader::register();
 
 echo "14";
-try {
+
 //	$redis = new PredisClient();
 
 	// This connection is for a remote server
