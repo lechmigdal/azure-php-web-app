@@ -1,6 +1,6 @@
 <?php
 
-echo "This works - does it?";
+echo "This works - does it? - changed code";
 try {
 require "predis/autoload.php";
 
