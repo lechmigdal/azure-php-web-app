@@ -1,17 +1,31 @@
 <?php
 
-$username = getenv('MYSQLCONNSTR_username');
-$password = getenv('MYSQLCONNSTR_password');
-$connectionString = getenv('MYSQLCONNSTR_server');
+require "predis/autoload.php";
+PredisAutoloader::register();
 
-$link = mysql_connect($connectionString, $username, $password);
-if (!$link) {
-    die('Could not connect: ' . mysql_error());
+try {
+	$redis = new PredisClient();
+
+	// This connection is for a remote server
+	$redis = new PredisClient(array(
+		    "scheme" => getenv('REDIS_SCHEME'),
+		    "host" => getenv('REDIS_HOST'),
+		    "port" => getenv('REDIS_PORT'),
+        "password" => getenv('REDIS_PASSWORD')
+		));
+
+    echo ("Succes in connecting");
 }
-echo 'Connected successfully';
-error_log('Connected successfully to DB');
-mysql_close($link);
-echo 'Update works';
-?>
+catch (Exception $e) {
+	die($e->getMessage());
+}
 
-<a href="http://www.beyondsecurity.com/vulnerability-scanner-verification/security-test.azurewebsites.net"><img src="https://seal.beyondsecurity.com/verification-images/security-test.azurewebsites.net/vulnerability-scanner-2.gif" alt="Website Security Test" border="0" /></a>
+// sets message to contian "Hello world"
+$redis->set('message', 'Hello world');
+
+// gets the value of message
+$value = $redis->get('message');
+
+echo($value);
+
+?>
