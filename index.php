@@ -1,9 +1,10 @@
 <?php
 
 echo "This works";
-/*require "predis/autoload.php";
+require "predis/autoload.php";
 PredisAutoloader::register();
 
+/*
 try {
 	$redis = new PredisClient();
 
