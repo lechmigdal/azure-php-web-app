@@ -20,16 +20,13 @@ try {
 
 		// sets message to contian "Hello world"
 		$redis->set('message', 'Hello world');
-/*
+
 		// gets the value of message
 		$value = $redis->get('message');
 
 		echo($value);
-*/
 }
 catch (Exception $e) {
 	echo($e->getMessage());
 }
-
-
 ?>
