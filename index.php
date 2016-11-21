@@ -1,5 +1,6 @@
 <?php
 
+echo "This works";
 /*require "predis/autoload.php";
 PredisAutoloader::register();
 
