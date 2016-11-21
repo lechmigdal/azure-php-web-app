@@ -6,10 +6,10 @@ PredisAutoloader::register();
 
 
 try {
-	$redis = new PredisClient();
+//	$redis = new PredisClient();
 
 	// This connection is for a remote server
-/*	$redis = new PredisClient(array(
+	$redis = new PredisClient(array(
 		    "scheme" => getenv('REDIS_SCHEME'),
 		    "host" => getenv('REDIS_HOST'),
 		    "port" => getenv('REDIS_PORT'),
@@ -17,7 +17,7 @@ try {
 		));
 
     echo ("Succes in connecting");
-
+/*
 		// sets message to contian "Hello world"
 		$redis->set('message', 'Hello world');
 
