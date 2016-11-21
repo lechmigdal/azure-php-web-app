@@ -9,6 +9,8 @@ try {
 //	$redis = new PredisClient();
 
 	// This connection is for a remote server
+	echo ("1");
+
 	$redis = new PredisClient(array(
 		    "scheme" => getenv('REDIS_SCHEME'),
 		    "host" => getenv('REDIS_HOST'),
@@ -27,6 +29,8 @@ try {
 		echo($value);
 }
 catch (Exception $e) {
+		echo ("exception");
 	echo($e->getMessage());
 }
+	echo ("the end");
 ?>
