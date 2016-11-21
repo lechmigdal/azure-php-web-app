@@ -1,6 +1,6 @@
 <?php
 
-require "predis/autoload.php";
+/*require "predis/autoload.php";
 PredisAutoloader::register();
 
 try {
@@ -27,7 +27,7 @@ try {
 }
 catch (Exception $e) {
 	echo($e->getMessage());
-}
+}*/
 
 
 ?>
