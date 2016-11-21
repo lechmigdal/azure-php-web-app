@@ -1,8 +1,9 @@
 <?php
 
-echo "This works - does it? - changed code";
+echo "This works - does it? - updated require";
+require "D:\home\site\wwwroot\predis\autoload.php";
 try {
-require "predis/autoload.php";
+
 
 echo "13";
 PredisAutoloader::register();
