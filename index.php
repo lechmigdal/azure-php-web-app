@@ -2,9 +2,12 @@
 
 echo "This works";
 require "predis/autoload.php";
-PredisAutoloader::register();
 
 echo "13";
+
+PredisAutoloader::register();
+
+echo "14";
 try {
 //	$redis = new PredisClient();
 
