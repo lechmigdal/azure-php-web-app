@@ -13,7 +13,7 @@ echo "14";
 //	$redis = new PredisClient();
 
 	// This connection is for a remote server
-	echo ("1");
+	echo ("1 this is branch test");
 
 	$redis = new PredisClient(array(
 		    "scheme" => getenv('REDIS_SCHEME'),
