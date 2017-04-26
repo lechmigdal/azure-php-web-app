@@ -1,6 +1,6 @@
 <?php
 
-echo "This works - does it? - updated require";
+echo "This works updated require";
 require "D:\home\site\wwwroot\predis\autoload.php";
 try {
 
